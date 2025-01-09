@@ -1,0 +1,54 @@
+import os
+
+
+class ENV:
+    DJANGO_ENV = os.getenv("DJANGO_ENV")
+
+    # Database settings
+    DATABASE_NAME = os.getenv("DATABASE_NAME")
+    DATABASE_USER = os.getenv("DATABASE_USER")
+    DATABASE_PASSWORD = os.getenv("DATABASE_PASSWORD")
+    DATABASE_HOST = os.getenv("DATABASE_HOST")
+    DATABASE_PORT = os.getenv("DATABASE_PORT")
+
+    # User default password
+    USER_DEFAULT_PASSWORD = os.getenv("USER_DEFAULT_PASSWORD")
+
+    # Redis settings
+    REDIS_HOST = os.getenv("REDIS_HOST")
+    REDIS_PORT = os.getenv("REDIS_PORT")
+
+    # Ollama settings
+    OLLAMA_API_URL = os.getenv("OLLAMA_API_URL")
+    OLLAMA_BASE_URL = os.getenv("OLLAMA_BASE_URL")
+    OLLAMA_API_KEY = os.getenv("OLLAMA_API_KEY")
+
+    # Fine-tuning related models
+    COLUMN_COMMENT_AGENT_MODEL = os.getenv("COLUMN_COMMENT_AGENT_MODEL")
+    QUESTION_BUILDER_MODEL = os.getenv("QUESTION_BUILDER_MODEL")
+    SCHEMA_RAG_MODEL = os.getenv("SCHEMA_RAG_MODEL")
+
+    # Chat related models
+    CONTEXT_HISTORY_QUESTION_COUNT = os.getenv("CONTEXT_HISTORY_QUESTION_COUNT")
+    QUESTION_AGENT_MODEL = os.getenv("QUESTION_AGENT_MODEL")
+    SQL_GENERATOR_AGENT_MODEL = os.getenv("SQL_GENERATOR_AGENT_MODEL")
+    ANSWER_GENERATOR_AGENT_MODEL = os.getenv("ANSWER_GENERATOR_AGENT_MODEL")
+    CHARTS_AGENT_MODEL = os.getenv("CHARTS_AGENT_MODEL")
+
+    # Fine-tuning server configuration
+    FINE_TUNE_SERVER_WEB_URL = os.getenv("FINE_TUNE_SERVER_WEB_URL")
+    FINE_TUNE_SERVER_HOST = os.getenv("FINE_TUNE_SERVER_HOST")
+    FINE_TUNE_SERVER_USERNAME = os.getenv("FINE_TUNE_SERVER_USERNAME")
+    FINE_TUNE_SERVER_PASSWORD = os.getenv("FINE_TUNE_SERVER_PASSWORD")
+    FINE_TUNE_SERVER_PYTHON_ENVIRONMENT_NAME = os.getenv(
+        "FINE_TUNE_SERVER_PYTHON_ENVIRONMENT_NAME"
+    )
+
+    # Embedding service
+    EMBEDDING_SERVICE_ENDPOINT = os.getenv("EMBEDDING_SERVICE_ENDPOINT")
+
+    # Query result settings
+    MAX_TOKENS_FOR_QUERY_RESULT = os.getenv("MAX_TOKENS_FOR_QUERY_RESULT")
+    MAX_RESULT_COUNT_FOR_DISPLAY_RESULT = os.getenv(
+        "MAX_RESULT_COUNT_FOR_DISPLAY_RESULT"
+    )

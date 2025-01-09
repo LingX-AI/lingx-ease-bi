@@ -1,0 +1,7 @@
+README.MD
+.dockerignore
+
+# jetbrains
+.idea
+media/*
+**/node_modules

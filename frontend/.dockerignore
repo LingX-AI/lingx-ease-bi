@@ -1,0 +1,9 @@
+.husky
+node_modules
+.eslintignore
+.eslintrc
+.gitignore
+.idea
+.lintstagedrc
+eslint.config.js
+README.md

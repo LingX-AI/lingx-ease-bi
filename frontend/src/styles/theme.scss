@@ -1,0 +1,107 @@
+$danger-color: #BC141B;
+
+#app {
+  height: 100vh;
+  overflow: hidden;
+}
+
+li.ant-pagination-options {
+  > div.ant-pagination-options-size-changer {
+    width: 100px;
+  }
+}
+
+._table-container-border {
+  div.ant-spin-container {
+    //border: 1px solid #0000001e;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  ul.ant-pagination {
+    margin: 0 !important;
+    padding: 13px 16px 13px 13px !important;
+    background-color: #FFFFFF;
+
+    li.ant-pagination-total-text {
+      flex: 1;
+      color: #5A607F;
+    }
+  }
+}
+
+button.ant-btn {
+  box-shadow: none
+}
+
+button.ant-btn.ant-btn-text {
+  padding: 4px 8px;
+}
+
+button.ant-btn.ant-btn-sm {
+  font-size: 12px;
+}
+
+
+button.ant-btn-primary.ant-btn-dangerous {
+  background-color: $danger-color;
+  border-color: $danger-color;
+
+  &:not(:disabled):hover {
+    background-color: darken($danger-color, 5%);
+    border-color: darken($danger-color, 5%);
+  }
+}
+
+li.ant-menu-item.ant-menu-item-selected {
+  background-color: #00164315
+}
+
+li.ant-picker-time-panel-cell-selected .ant-picker-time-panel-cell-inner {
+  background-color: #00164315 !important;
+}
+
+.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-in-range.ant-picker-cell-range-hover-end::before {
+  background-color: #00164315 !important;
+}
+
+//.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-range-start:not(.ant-picker-cell-range-start-single)::before,
+//.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-range-end:not(.ant-picker-cell-range-end-single)::before,
+//.ant-picker-dropdown .ant-picker-cell-in-view.ant-picker-cell-in-range::before{
+//  background-color: #00164315 !important;
+//}
+
+div.ant-form-item-explain-error {
+  font-size: 12px;
+}
+
+#nprogress {
+  .bar {
+    background: #001744 !important;
+  }
+
+  .peg {
+    box-shadow: 0 0 10px #043461, 0 0 5px #043461;
+  }
+}
+
+input::placeholder,
+textarea::placeholder {
+  font-weight: 400 !important;
+  font-size: 14px !important;
+  color: rgba(120, 128, 165, 0.63) !important;
+}
+
+.ant-input:focus,
+.ant-input-affix-wrapper-focused,
+.ant-input-number-focused,
+.ant-select-focused .ant-select-selector,
+.ant-picker-focused {
+  box-shadow: none !important;
+}
+
+li.ant-cascader-menu-item-active,
+div.ant-select-item-option-active,
+div.ant-select-item-option-selected {
+  background-color: #DEE9FF !important;
+}
